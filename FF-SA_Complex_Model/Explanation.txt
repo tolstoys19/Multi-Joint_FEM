@@ -1,1 +1,25 @@
-This files containts all the models for all of the modeled attachment methods for both the OMA and the DFSA. Please run, the studies until convergence stops then continue running the next study.The Sequential Pattern ends at step 61 while the Simultaneous and Independent Patterns end at step 21. For the Independent Pattern of the MCP please use step 0-21 of the Sequential Pattern studies. 
+This files containts all the models for all of the modeled attachment methods for both the OMA and the DFSA. Please run, the studies until convergence stops then continue running the next study.The Sequential Pattern ends at step 61 while the Simultaneous and Independent Patterns end at step 21. For the Independent Pattern of the MCP please use step 0-21 of the Sequential Pattern studies. All models are built on COMSOL Multiphysics 6.3
+
+In order to run the models.
+
+When loading the models COMSOL might automatically generate Identity Boundary Pairs inside the model automatically. This identity boundary pairs should be removed in order for th emodel to run. 
+
+After deleting the boundary please reset the solver settings for each of the studies by pressing right right click and pressing reset solver settings. Our models where tested to run with the folowing settings:
+
+Maximum Number of Iterations: 1000
+Tolerance: 1e-40
+
+Set Continuation to ON on the Paramtric Studdy Settings and input the following parameters:
+
+Initial Step Size: 2
+Minimum Step Size: 0.001
+Maximum Step Size> 1
+
+The studies are set to be run in concatenation: Sequential Pattern 1 -> Sequential Pattern 2 -> Sequential Pattern 3...
+
+Each study should be run until convergence stops. Once the convergence has stopped access the final integer step value where convergence stopped, then go to the next study and set this as your initial parameter in the parametric sweep of the next study. After this, acces the Values of Dependent Variables node inside the stationary study settings, in settings select: User Controlled, Method: Solution, in the study section put your previous study and in solution the solution of your previouss study. Finally, in the Parameter Value section choose the parameter you chose to start your new parametric sweep.Do this for both, the variables solved for and the variable not solved for. 
+
+
+The parametric sweeps used in our model are the values that worked for us and are set as examples, these values are very sensitive and might differ depending small variations on the solvers and physics implementations of your current COMSOL Version. In case this values do not work for you please update to new values according to the process explained in the previous paragraph. Sometimes choosing values a few steps before convergence stopped might help you improve convergence in the next study. 
+
+Have fun modeling and please contact us if you require any assistance! 
