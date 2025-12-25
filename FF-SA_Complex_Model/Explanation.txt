@@ -1,15 +1,18 @@
-This files contains all the models for all of the modeled attachment methods for both the OMA and the DFSA. Please run, the studies until convergence stops then continue running the next study.The Sequential Pattern ends at step 61 while the Simultaneous and Independent Patterns end at step 21. For the Independent Pattern of the MCP please use step 0-21 of the Sequential Pattern studies. All models are built on COMSOL Multiphysics 6.3
+This files contains all the models for all of the modeled attachment methods for both the OMA and the DFSA. Please run, the studies until convergence stops then continue running the next study. The Sequential Pattern ends at step 61 while the Simultaneous and Independent Patterns end at step 21. For the Independent Pattern of the MCP please use step 0-21 of the Sequential Pattern studies. All models are built on COMSOL Multiphysics 6.3
+
+This files contains all the models for all of the modeled attachment methods for both the OMA and the DFSA. Please run, the studies until convergence stops then continue running the next study. The Sequential Pattern ends at step 61 while the Simultaneous and Independent Patterns end at step 21. For the Independent Pattern of the MCP please use step 0-21 of the Sequential Pattern studies. All models are built on COMSOL Multiphysics 6.3
+>>>>>>> 52f7b0a63832e99cb8e1c8f0dfe61d795210ce4a
 
 In order to run the models.
 
-When loading the models COMSOL might automatically generate Identity Boundary Pairs inside the model automatically. This identity boundary pairs should be removed in order for th emodel to run. 
+When loading the models COMSOL might automatically generate Identity Boundary Pairs inside the model automatically. This identity boundary pairs should be removed in order for the model to run. 
 
-After deleting the boundary please reset the solver settings for each of the studies by pressing right right click and pressing reset solver settings. Our models where tested to run with the folowing settings:
+After deleting the boundary please reset the solver settings for each of the studies by pressing right right click and pressing reset solver settings. Our models where tested to run with the following settings:
 
 Maximum Number of Iterations: 1000
 Tolerance: 1e-40
 
-Set Continuation to ON on the Paramtric Studdy Settings and input the following parameters:
+Set Continuation to ON on the Parametric Study Settings and input the following parameters:
 
 Initial Step Size: 2
 Minimum Step Size: 0.001
@@ -23,3 +26,4 @@ Each study should be run until convergence stops. Once the convergence has stopp
 The parametric sweeps used in our model are the values that worked for us and are set as examples, these values are very sensitive and might differ depending small variations on the solvers and physics implementations of your current COMSOL Version. In case this values do not work for you please update to new values according to the process explained in the previous paragraph. Sometimes choosing values a few steps before convergence stopped might help you improve convergence in the next study. 
 
 Have fun modeling and please contact us at ccta0833@chiba-u.jp if you require any assistance! 
+
