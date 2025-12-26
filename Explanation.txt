@@ -1,3 +1,0 @@
-In this folder we place the average contact area measurements and average displacement measurements of our models for the FF-SA Complex Models for all AMs.
-
-If there are any doubts about how this measurements were taken please feel free to contact us. 
