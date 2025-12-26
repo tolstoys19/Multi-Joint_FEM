@@ -1,0 +1,5 @@
+This folder contains all our FEM models used for our Dummy Joint-Soft Actuator Complex.
+
+All models were built on Comsol Multiphysics 6.3
+
+Most models can be run using only one study. In case you find models with concatenated studies please run them sequentially.
