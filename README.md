@@ -13,3 +13,9 @@ Explanations of how to run our models are provided inside their respective folde
 Thank you for your interest and hope this data is of use to you!
 
 For any doubts please feel free to contact us at: ccta0833@chiba-u.jp
+
+Please reference the following article when using data or models from this repository:
+
+
+P. E. Tortós-Vinocour et al., "Accounting for the Interaction Between a Dummy Finger and Joint Modular Soft Actuators for Multi-Joint Support Using a Novel FEM-Based Approach," in IEEE Robotics and Automation Letters, doi: 10.1109/LRA.2026.3653334. 
+https://ieeexplore.ieee.org/document/11345949
